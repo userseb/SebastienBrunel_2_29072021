@@ -1,0 +1,368 @@
+*{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color:initial;
+
+}
+body {
+  font-family: "Raleway", "sans-serif";
+  margin: auto;
+  max-width: 1440px;
+  width:auto;
+}
+header {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  height: 72px;
+  width: 100%;
+  background-color: white;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  /* align-items: flex-end; */
+  width: 50%;
+  justify-content: flex-end;
+  height: 72px;
+  
+}
+nav li {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  width: 155px;
+  text-align: center;
+  height: 70px;
+  border-top: 2px solid transparent;
+}
+.a-active-link ,.link , .login{
+  display: flex;
+align-items: center;
+}
+.nav-link , .link :hover {
+color:#0065FC;
+border-top:2px solid #0065FC;
+}
+
+.a-link-active {
+  color: #0065FC;
+  border-top: 2px solid #0065FC;
+}
+.underline-effect{
+  height:30px;
+  border-top:10px solid #0065fc
+}
+/*sectionRecherche*/
+
+.h1 {
+  font-size: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.city-center {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.icon-location{
+  display:flex;
+  margin-top:15px;
+  margin-bottom:35px;
+  align-items: center;
+  height:52px;
+  width: auto;
+}
+.icon-location >input{
+  width: 240px;
+  height: 52px;
+  border:1px solid #F2F2F2;
+}
+.icon-location > button{
+  background-color: #0065FC;
+  color:white;
+  width: 122px;
+  height: 57px;
+  border-radius: 0 14px  14px 0;
+  border:1px solid #F2F2F2;
+}
+.icon-location > i{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: 55px;
+  width: 59px;
+  border:1px solid #F2F2F2;
+  font-size: 17px;
+  border-radius: 13px 0 0 13px;
+  background-color: #F2F2F2;
+  
+}
+.filters{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 700;
+  width:60%;
+  list-style: none;
+  font-size: 1.2em;
+}
+.filter-button {
+  display:flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  background-color: white;
+  border:1px solid black;
+  margin:0;
+}
+/*hebergements*/
+.blocs {
+  background: #F2F2F2;
+  border-radius: 25px;
+  
+}
+.container-accommodation {/*ConteneurHébergements*/
+  display: grid;
+  grid-template-columns: 1.9fr 1fr;
+  grid-gap: 30px;
+  
+  margin:40px 0 60px 0
+}
+.marseille-accommodation{/*élémentsHébergement*/
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  padding-left: 45px;
+}
+.titre-accommodation{
+  background-color: #F2F2F2;
+  display:block;
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font: size 1.5em;
+}
+.accommodations{/*chambres*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 27px;
+  padding: 0 40px 20px 0;
+  
+
+}
+
+.marseille-room {/*élementsChambres*/
+  list-style: none;
+  display: flex;
+  flex-direction:column;
+  background-color: white;
+  align-items:start;
+  border:8px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+  
+  ;
+
+  
+}
+.rooms{
+  width: 100%;
+}
+.case-img-host {
+  width: 250px;
+  height: 100px;
+  
+  object-fit: cover;
+  border-radius: 14px 14px 0 0;
+  ;
+}
+.case-text {
+  background-color: #ffffff;
+}
+.accommodation-name{
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  margin:8px 8px;
+}
+.accommodation-price{
+margin:8px 8px;
+}
+.price{
+font-weight: bold;
+}
+.show-more{
+  display: block;
+}
+
+/*populaire*/
+.bloc-most-popular{/*conteneur*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 25px;
+  flex-direction: column;
+  padding: 0 30px;
+  height:100%
+}
+.most-popular{/*éléments*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:  1fr 1fr 1fr;
+  row-gap: 25px;
+  height: 100%;
+  width: 100%;
+}
+.h2-and-icon{/*titre et icone*/
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin:0;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 0 30px;
+  
+}
+.h2{
+  margin-top:8px;
+  margin-bottom: 8px;
+}
+.fas fa-chart-line{
+ font-size: 26px;
+}
+.room-popular{/*chambres*/
+display: flex;
+margin: 0;
+background-color: white;
+border-radius: 20px;
+padding: 7px 0 7px 7px;
+box-shadow: 0px 0px 6px 0px #0000002e;
+width: auto;
+height:100%;
+}
+.room-popular-case-img{/*imageChambres*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:20px 0 0 13px;
+  max-width: 170px;
+  border-radius:20px;
+  display:flex;
+  align-items: flex-start;
+}
+.img-src{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius:20px 0 0 13px;
+  
+  
+}
+.case-text-popular{/*texteChambres*/
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stars > i.valid {
+  color: #0065fc;
+}
+.stars > i.null {
+  color:#D9D9D9;
+}
+.conteneur-marseille-activity{
+  display: grid;
+  grid-template-columns: repeat(4,auto);
+  padding:0;
+  height: 550px;
+  grid-gap:30px;
+
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+.conteneur-marseille-activity > div{
+  background-color: rgb(155, 148, 148);
+  
+  padding:0;
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px 0px #0000002e;
+}
+.conteneur-marseille-activity > div >a{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-decoration: none;
+  border-radius: 20px;
+}
+.conteneur-marseille-activity > div >a >h3{
+  background-color: white;
+  border-radius:0 0 20px 20px;
+  margin: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding:0 20px;
+}
+.conteneur-marseille-activity > div:hover{
+  transform:scale(1.03);
+  transition: 0.4s;
+}
+.item1 {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  background: url(src/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg)center;
+  background-size: cover;
+}
+.item2 {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  background: url(src/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg)center;
+  background-size: cover;
+}
+
+.item3 {
+	grid-column:2;
+    grid-row:3/4;
+    background: url(src/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg)center;
+    background-size: cover;
+}
+.item4 {
+	grid-column:3;
+  grid-row:1/4;
+  background: url(src/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg)center;
+  background-size: cover;
+}
+.item5{
+	grid-column:4/4;
+    grid-row:1/2;
+    background: url(src/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg)center;
+  background-size: cover;
+    
+}
+.item6{
+	grid-column:4/4;
+    grid-row:2/4;
+    background: url(src/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg)center;
+  background-size: cover;
+}
