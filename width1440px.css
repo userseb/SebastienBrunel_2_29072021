@@ -1,0 +1,30 @@
+main{
+    margin:0 20px;
+}
+.container-accommodation {
+    /*ConteneurHébergements*/
+    display:flex;
+    flex-direction: column-reverse;
+    grid-template-columns: 1fr 1fr;
+    
+   width:90%;
+   margin:0 30px
+}
+.most-popular{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    grid-template-rows: 1fr;
+}
+.most-popular >#room1{
+    grid-column:1/2;
+    align-items: center;
+    max-height: 90%;
+
+    }
+.most-popular >#room2{
+    grid-column:2/3;
+}
+.most-popular >#room3{
+    grid-column: 3/3;
+}
