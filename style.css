@@ -7,12 +7,12 @@ a {
 }
 body {
   font-family: "Raleway", "sans-serif";
-  margin: 0;
+  margin-top:3px;
 }
 main {
-  margin: 40px;
+  margin: auto;
   max-width: 1440px;
-  width: auto;
+  width: 98%;
 }
 header {
   top: 0;
@@ -22,17 +22,25 @@ header {
   height: 72px;
   width: 100%;
   background-color: white;
-  margin: auto;
   max-width: 1440px;
   margin: 3px auto auto auto;
 }
+img.logo{
+  margin: auto;
+  display: inline-flexbox;
+}
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   max-width: 1440px;
   width: 100%;
   margin: -12px 0 0 0;
+}
+.nav-link >a >.li-text {
+  text-align:center;
+  display: flex;
+  justify-content:center
 }
 nav ul {
   display: flex;
@@ -81,10 +89,7 @@ nav li {
 .login {
   border-top: 5px solid transparent;
 }
-.underline-effect {
-  height: 30px;
-  border-top: 10px solid #0065fc;
-}
+
 /*sectionRecherche*/
 
 .h1 {
@@ -147,6 +152,7 @@ nav li {
   margin: 0 4px 0 0;
   font-size: 25px;
   text-rendering: bold;
+  cursor: default;
 }
 .filter-button {
   display: flex;
@@ -197,7 +203,7 @@ nav li {
 .infos > p {
   margin: 16px;
 }
-.filters :hover {
+.filters :hover:not(.title-filters) {
   color: #0065fc;
   transform: scale(1.05);
   transition: 0.2s;
@@ -233,12 +239,14 @@ nav li {
   background-color: #f2f2f2;
   display: block;
   display: block;
-  font-size: 18pxpx;
+  font-size: 18px;
+  margin-left: 30px;
 }
 .accommodations {
   /*chambres*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  align-content: center;
   grid-gap: 27px;
   padding: 0 40px 20px 0;
 }

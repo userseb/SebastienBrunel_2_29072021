@@ -1,0 +1,68 @@
+main {
+    margin: auto;
+     width: 85%;
+}
+
+.container-accommodation {
+    /*ConteneurHébergements*/
+    display:flex;
+    flex-direction: column-reverse;
+    grid-template-columns: 1fr 1fr;    
+   width:90%;
+   margin:auto;
+}
+.marseille-accommodation {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding:0;
+    width:auto;
+  }
+  .accommodations {
+    /*chambres*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 27px;
+    padding: 0 40px 20px 0;
+    width:auto;
+    margin: auto;
+    max-width: 1200px;
+  }
+  .accommodations >a {
+      display: grid;
+        align-content:space-around;
+        width: auto;
+        padding:10;
+}
+  .marseille-room {
+    /*élementsChambres*/
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: stretch;
+    border: 8px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px #0000002e;
+    min-width:100%;
+}
+.marseille-room >.room1 >.case-img >.case-img-host,.case-text{
+    display:flex;
+    flex-direction:column;
+    min-width:95%;
+    object-fit: cover;
+    align-items: center;
+}
+.case-img-host{
+    max-width: 99%;
+    max-height: 98%;
+}
+.most-popular{
+    display: grid;
+    grid-template-columns: 1fr ;
+    column-gap: 30px;
+    grid-template-rows: 1fr;
+    width:90%;
+}
