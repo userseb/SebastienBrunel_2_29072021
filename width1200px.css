@@ -2,7 +2,16 @@ main {
     margin: auto;
      width: 85%;
 }
-
+.filters {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin:2px;
+}
+.filters >.filter-button >div {
+flex-shrink: 1;
+}
 .container-accommodation {
     /*ConteneurHébergements*/
     display:flex;
