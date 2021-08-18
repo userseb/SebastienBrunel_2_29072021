@@ -9,14 +9,49 @@ header{
 main{
     margin:0 10px;
 }
-main >.h1 ,.city-center{
+main >.h1 ,.city-center {
     width: 70%;
     margin-left: 30px;
 }
 main >.search {
-    width:80%;
-    margin-left: 30px;
+    width:90%;
+    
 }
+.div-filters{
+    width: 100%;
+    margin: 0 10px
+
+  }
+  .filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding-left: 0;
+    cursor: pointer;
+  }
+  .filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 700;
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding-left: 0;
+    cursor: pointer;
+  }
+  .f-icon{
+      margin-right:15px
+  }
+  .f-text{
+      text-align:center;
+  }
 .container-accommodation {
     /*ConteneurHébergements*/
     display:flex;
@@ -24,8 +59,14 @@ main >.search {
     grid-template-columns: 1fr 1fr;
     
    width:90%;
-   margin:0 30px
 }
+.marseille-accommodation {
+    /*élémentsHébergement*/
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding-left: 45px;
+}
+
 .most-popular{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -45,4 +86,29 @@ main >.search {
 .conteneur-marseille-activity{
     width: 90%;
     margin-left: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+.item2 {
+    grid-column:2 ;
+    grid-row: 1;
+}
+.item3 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.item4 {
+    grid-column: 3;
+    grid-row: 1;
+}
+.item5 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.item6 {
+    grid-column: 3;
+    grid-row: 2;
 }
