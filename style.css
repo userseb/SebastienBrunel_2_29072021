@@ -135,6 +135,10 @@ nav li {
   border-radius: 13px 0 0 13px;
   background-color: #f2f2f2;
 }
+.icon-location > input::placeholder{
+  font-weight: bold;
+  color:black;
+}
 /*filtres*/
 .div-filters{
   display: flex;
@@ -275,7 +279,6 @@ nav li {
 .case-img-host {
   width: 250px;
   height: 100px;
-
   object-fit: cover;
   border-radius: 14px 14px 0 0;
 }
@@ -287,10 +290,10 @@ nav li {
   font-size: 1.17em;
 
   font-weight: bold;
-  margin: 8px 8px;
+  margin: 8px 3px;
 }
 .accommodation-price {
-  margin: 8px 8px;
+  margin: 8px 3px;
 }
 .price {
   font-weight: bold;
@@ -308,33 +311,36 @@ nav li {
   background-color: #f2f2f2;
   border-radius: 25px;
   flex-direction: column;
-  padding: 0 30px 20px 20px;
+  padding: 0 ;
   height: 100%;
+  width:100%;
 }
 .most-popular {
   /*éléments*/
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 25px;
-  height: 100%;
-  width: 100%;
+  grid-template-rows: 0.25fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  height: 90%;
+  width: 90%;
   align-items: center;
+}
+.most-popular .case-text {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .h2-and-icon {
   /*titre et icone*/
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  margin: 0;
-  font-size: 18px;
-  width: 100%;
-  padding: 0 30px;
+  margin:0;
+}.h2-and-icon > h2{
+  margin:0
 }
-.h2 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
+
 .h2-and-icon > .fas {
   font-size: 25px;
 }
@@ -348,11 +354,16 @@ nav li {
   box-shadow: 0px 0px 6px 0px #0000002e;
   width: 100%;
   height: 100%;
-  align-items: center;
+  
 }
 .most-popular >:hover:not(.room-popular){
   transform: scale(1.05);
   transition: 0.5s;
+}
+
+h3.hotel-name ,p.hotel-price{
+  margin: 0;
+  padding:4px 0;
 }
 .room-popular-case-img {
   /*imageChambres*/

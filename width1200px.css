@@ -3,7 +3,20 @@ main {
      width: 100%;
 }
 img.logo{
-  margin-left:130px;
+  margin-left:50px;
+}
+h1.h1{
+  margin-left: 50px;
+}
+.city-center{
+  margin-left:50px;
+}
+.icon-location {
+  display: flex;
+  margin: 15px 0 35px 50px; 
+  align-items: center;
+  height: 52px;
+  width: auto;
 }
 .div-filters{
   width: 100%;
@@ -59,14 +72,14 @@ img.logo{
     grid-gap: 27px;
     padding: 0 40px 20px 0;
     width:auto;
-    margin: auto;
+    margin: 0;
     margin-left: 20px;
     max-width: 1200px;
   }
   .accommodations >a {
       display: grid;
         align-content:space-around;
-        width: auto;
+        width: 100%;
         padding:10;
 }
   .marseille-room {
@@ -81,23 +94,64 @@ img.logo{
     box-shadow: 0px 0px 6px 0px #0000002e;
     min-width:100%;
 }
-.marseille-room >.room1 >.case-img >.case-img-host,.case-text{
+.marseille-room >.room1 >.case-img >.case-img-host {
     display:flex;
     flex-direction:column;
-    min-width:95%;
+    width:95%;
     object-fit: cover;
     align-items: center;
 }
 .case-img-host{
-    max-width: 99%;
-    max-height: 98%;
+  
+    width:100%
+}
+.case-text{
+    display:flex;
+    flex-direction:column;
+  align-items:flex-start;
+}
+.bloc-most-popular{
+  display: inline;
+  justify-content: center;
+  align-items:center;
+  height:250px;
+  
 }
 .most-popular{
-    display: grid;
-    grid-template-columns: 1fr ;
-    column-gap: 30px;
-    grid-template-rows: 1fr;
-    width:90%;
+  margin:0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 0.25fr 1fr;
+  column-gap: 20px;
+  row-gap: 10px;
+  width:96%;
+}
+.room-popular-case-img{
+  object-fit: cover;
+      display:flex;
+      align-items: flex-start;
+      width:75px
+  }
+  .img-src{
+      width: 80px;
+  }
+.h2-and-icon{
+  grid-column: 1/4;
+  grid-row: 1;
+}
+.room1{
+  grid-row: 2;
+  
+}
+.room2{
+  grid-row: 2;
+}
+.room3{
+  grid-row: 2;
+}
+
+.room-popular >img.img-src{
+  object-fit: cover;
 }
 .titre-activity{
   margin: 40px;
@@ -106,6 +160,7 @@ img.logo{
   width: 90%;
   margin-left: 30px;
   grid-template-columns: repeat(3, 1fr);
+  object-fit: cover;
 }
 .item1 {
   grid-column: 1;
