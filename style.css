@@ -188,9 +188,7 @@ nav li {
   border-radius: 100px;
   color: #0065fc;
 }
-.f-text {
-  
-}
+
 .infos {
   display: flex;
   flex-direction: row;
@@ -300,6 +298,7 @@ nav li {
 }
 .show-more {
   display: block;
+  font-weight: bold;
 }
 
 /*populaire*/
