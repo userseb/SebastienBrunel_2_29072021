@@ -125,6 +125,7 @@ h1.h1{
   column-gap: 20px;
   row-gap: 10px;
   width:96%;
+  padding-left: 10px;
 }
 .room-popular-case-img{
   object-fit: cover;
@@ -138,6 +139,7 @@ h1.h1{
 .h2-and-icon{
   grid-column: 1/4;
   grid-row: 1;
+  padding-left: 20px;
 }
 .room1{
   grid-row: 2;
