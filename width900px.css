@@ -1,3 +1,4 @@
+
 ul.filters{
     display: flex;
     flex-wrap: wrap;
@@ -49,7 +50,7 @@ h3.titre-activity{
 }
 .conteneur-marseille-activity{
     width: 90%;
-    margin-left: 30px;
+    margin:0 5px 350px 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
     object-fit: cover;
