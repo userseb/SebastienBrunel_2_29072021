@@ -69,3 +69,20 @@ li#b:hover {
 main{
     margin-top: 120px;
 }
+.container-accommodation{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.marseille-accommodation{
+    width:100%;
+    padding:0;
+}
+.accommodations{
+    display:grid;
+    grid-template-columns: 1fr;
+    width:90%;
+    padding: 0 30px;
+}
+.marseille-room{
+    width: 90%;
+}
