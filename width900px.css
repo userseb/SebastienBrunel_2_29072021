@@ -1,4 +1,18 @@
+.header{
+  width: 90%;
+  margin-left: 50px;
+}
 
+nav{
+margin-right: 25px;
+width: 90%;
+}
+.img-logo{
+  margin-left:45px
+}
+.nav-link >li{
+  padding:0 20px
+}
 ul.filters{
     display: flex;
     flex-wrap: wrap;

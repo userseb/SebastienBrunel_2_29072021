@@ -1,6 +1,9 @@
 * {
   list-style: none;
 }
+.reservia-logo{
+  display: none;
+}
 a {
   text-decoration: none;
   color: initial;
@@ -15,11 +18,8 @@ main {
   width: 98%;
 }
 header {
-  top: 0;
-  left: 0;
   display: flex;
   justify-content: center;
-  height: 72px;
   width: 100%;
   background-color: white;
   max-width: 1440px;
@@ -27,7 +27,6 @@ header {
 }
 img.logo {
   margin: auto;
-  display: inline-flexbox;
 }
 nav {
   display: flex;
@@ -45,10 +44,10 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  /* align-items: flex-end; */
   width: 50%;
   justify-content: flex-end;
   height: 72px;
+  margin-top: 3px;
 }
 nav li {
   display: flex;
