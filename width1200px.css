@@ -80,7 +80,7 @@ h1.h1{
       display: grid;
         align-content:space-around;
         width: 100%;
-        padding:10;
+        padding: 10px;
 }
   .marseille-room {
     /*élementsChambres*/
