@@ -69,6 +69,27 @@ li#b:hover {
 main{
     margin-top: 120px;
 }
+.icon-location{
+    width:92%;
+}
+.icon-location >input {
+    width:100%
+}
+.div-filters{
+    display: flex;
+    flex-direction: column;align-items: flex-start;
+}
+.title-filters{
+    margin-left: 5px;
+}
+ul.filters{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.filter-button{
+    margin:5px;
+}
 .container-accommodation{
     display: flex;
     flex-direction: column-reverse;
@@ -85,4 +106,81 @@ main{
 }
 .marseille-room{
     width: 90%;
+}
+.room-popular-case-img {
+    object-fit: cover;
+    border-radius: 20px 0 0 13px;
+    max-width: 170px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-start;
+    width: auto;
+}
+.case-img-host{
+    width:100%;
+}
+.rooms {
+    width: 100%;
+}
+.img-src{
+    object-fit: cover;
+    display:flex;
+    flex-wrap: nowrap;
+  
+    width: 70px;
+
+}
+#room1.room-popular{
+display:flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-between;
+
+}
+.most-popular {
+    width: 95%;
+}
+.room-popular {
+    width:96%;
+    margin-bottom:10px
+}
+.case-text-popular {
+    width:100%
+}
+
+.conteneur-marseille-activity{
+display:grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(6,1fr);
+height:1500px
+}
+.item1{
+    grid-row: 1;height: auto;
+  }
+  .item2 {
+    grid-column:1 ;
+    grid-row: 2;
+  }
+  .item3 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .item4 {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .item5 {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .item6 {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  .footer-blocks {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    flex-direction: column;
 }
