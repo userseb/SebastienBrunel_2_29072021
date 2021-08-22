@@ -102,7 +102,7 @@ ul.filters{
     display:grid;
     grid-template-columns: 1fr;
     width:90%;
-    padding: 0 30px;
+    padding: 0 30px 0 15px;
 }
 .marseille-room{
     width: 90%;
@@ -176,6 +176,9 @@ height:1500px
   .item6 {
     grid-column: 1;
     grid-row: 6;
+  }
+  .blocs-footer{
+      padding: 5px 10px;
   }
   .footer-blocks {
     display: flex;
