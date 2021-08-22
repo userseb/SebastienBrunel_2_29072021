@@ -158,7 +158,6 @@ transition:0.4s;
 .title-filters {
   margin: 0 4px 0 0;
   font-size: 25px;
-  text-rendering: bold;
   cursor: default;
 }
 .filter-button {
@@ -198,7 +197,7 @@ transition:0.4s;
   color: #0065fc;
   border: 1px solid #e2e2e2;
   border-radius: 100px;
-  font: size 17px;
+  font-size 17px ;
   margin-right: 20px;
 }
 .infos > p {
