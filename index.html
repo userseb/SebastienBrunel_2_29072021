@@ -1,377 +1,464 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Réservia</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (min-width:300px) and ( max-width: 650px )" href="width650px.css">
-    <link rel="stylesheet" media="screen and (min-width:650px) and  ( max-width: 900px )" href="width900px.css">
-    <link rel="stylesheet" media="screen and (min-width:1200px) and  ( max-width: 1350px )" href="width1350px.css">
-    <link rel="stylesheet" media="screen and (min-width:900px) and  ( max-width: 1200px )" href="width1200px.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" 
-    rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:300px) and ( max-width: 650px )"
+      href="width650px.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:650px) and  ( max-width: 900px )"
+      href="width900px.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:1200px) and  ( max-width: 1350px )"
+      href="width1350px.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:900px) and  ( max-width: 1200px )"
+      href="width1200px.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!--navbar-->
-   <header class=header><!--Header-->
-    <a href="index.html">
-        <img class="logo" src="src/images/logo/Reservia.svg" alt="LogoRéservia">
-    </a>
-    <nav> 
+    <header class="header">
+      <!--Header-->
+      <a href="index.html">
+        <img
+          class="logo"
+          src="src/images/logo/Reservia.svg"
+          alt="LogoRéservia"
+        />
+      </a>
+      <nav>
         <ul class="nav-link">
-            <li class="reservia-logo">
-                <a href="index.html">
-                    <img class="logo" src="src/images/logo/Reservia.svg" alt="LogoRéservia">
-                </a>
-
-            </li>
-            <li class="li-text" id="a">
-                    <a class="link-active" href="#titre-Acommodation" >Hébergements</a>
-                </li>
-            <li class="li-text" id="b">
-                    <a class="link" href="#activity" >Activités</a>
-                </li> 
-            <li class="li-text" id="c">
-                    <a class="login" href="#Sign-up" >S'inscrire</a>
-                </li> 
-           
-       </ul>   
-           
-    </nav>
-   </header>
-   <!--section recherche-->
-   <main>
-       <h1 class="h1">Trouvez votre hébergement pour des vacances de reve</h1>
-       <p class="city-center">En plein cente-ville ou en pleine nature</p>
-       <section class="search">
+          <li class="reservia-logo">
+            <a href="index.html">
+              <img
+                class="logo"
+                src="src/images/logo/Reservia.svg"
+                alt="LogoRéservia"
+              />
+            </a>
+          </li>
+          <li class="li-text" id="a">
+            <a class="link-active" href="#titre-Acommodation">Hébergements</a>
+          </li>
+          <li class="li-text" id="b">
+            <a class="link" href="#activity">Activités</a>
+          </li>
+          <li class="li-text" id="c">
+            <a class="login" href="#Sign-up">S'inscrire</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--section recherche-->
+    <main>
+      <h1 class="h1">Trouvez votre hébergement pour des vacances de reve</h1>
+      <p class="city-center">En plein cente-ville ou en pleine nature</p>
+      <section class="search">
         <div class="icon-location">
-            <i class="fas fa-map-marker-alt" ></i>
-            <input type="text" placeholder="Marseille,France">
-            <button class="recherche">Rechercher</button>
+          <i class="fas fa-map-marker-alt"></i>
+          <input type="text" placeholder="Marseille,France" />
+          <button class="recherche">Rechercher</button>
         </div>
         <!--Filtres-->
         <div class="div-filters">
-            <h3 class="title-filters">Filtres</h3>
-            <ul class="filters">
-                <li class="filter-button money">
-                     <div class="f-icon">
-                    <i class="fas fa-money-bill-wave"></i></div> <span class="f-text">Économiques</span></li>
-                 <li class="filter-button child">
-                    <div class="f-icon">
-                    <i class="fas fa-child"></i></div><span  class="f-text">Familial</span></li>
-                 <li class="filter-button heart">
-                    <div class="f-icon">
-                    <i class="fas fa-heart"></i></div><span  class="f-text">Romantiques</span></li>
-                 <li class="filter-button dog">
-                    <div class="f-icon">
-                    <i class="fas fa-dog"></i></div><span  class="f-text">Animaux autorisés</span></li>
-                </ul>
-                
-            </div>
-        <div class="infos">
-            <i class="fas fa-info"></i>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                
+          <h3 class="title-filters">Filtres</h3>
+          <ul class="filters">
+            <li class="filter-button money">
+              <div class="f-icon">
+                <i class="fas fa-money-bill-wave"></i>
+              </div>
+              <span class="f-text">Économiques</span>
+            </li>
+            <li class="filter-button child">
+              <div class="f-icon">
+                <i class="fas fa-child"></i>
+              </div>
+              <span class="f-text">Familial</span>
+            </li>
+            <li class="filter-button heart">
+              <div class="f-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <span class="f-text">Romantiques</span>
+            </li>
+            <li class="filter-button dog">
+              <div class="f-icon">
+                <i class="fas fa-dog"></i>
+              </div>
+              <span class="f-text">Animaux autorisés</span>
+            </li>
+          </ul>
         </div>
-        </section>
-        <!--Hébergements-->
-        <section>
-            <div class="container-accommodation">
-                <div class="marseille-accommodation">
-                    <div class="titre-accommodation"><h2>Hébergements à Marseille</h2></div>
-                    <div class="accommodations">
-                        <a href="#">
-                            <div class="marseille-room">
-                                <div class="rooms">
-                                    <div class="case-img">
-                                        <img src="src/images/hebergements/4_small/AubergeLaCanebiere.jpg" alt="Auberge la Canebière" class="case-img-host">
-                                    </div>
-                                </div>
-                                <div class="case-text">
-                                    <h3 class="accommodation-name">Auberge la Canebière</h3>
-                                    <p class="accommodation-price">
-                                        Nuit à partir de
-                                        <span class="price">25€</span>
-                                    </p>
-                                    <div class="stars">
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star null"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="marseille-room">
-                                <div class="rooms">
-                                    <div class="case-img">
-                                        <img src="src/images/hebergements/4_small/HotelDuPort.jpg" alt="Hôtel du Port" class="case-img-host">
-                                    </div>
-                                </div>
-                                <div class="case-text">
-                                    <h3 class="accommodation-name">Hotel du Port</h3>
-                                    <p class="accommodation-price">
-                                        Nuit à partir de
-                                        <span class="price">52€</span>
-                                    </p>
-                                    <div class="stars">
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="marseille-room">
-                                <div class="rooms">
-                                    <div class="case-img">
-                                        <img src="src/images/hebergements/4_small/HotelLesMouettes.jpg" alt="Hôtel les Mouettes" class="case-img-host">
-                                    </div>
-                                </div>
-                                <div class="case-text">
-                                    <h3 class="accommodation-name">Hôtel les Mouettes</h3>
-                                    <p class="accommodation-price">
-                                        Nuit à partir de
-                                        <span class="price">76€</span>
-                                    </p>
-                                    <div class="stars">
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star null"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="marseille-room">
-                                <div class="rooms">
-                                    <div class="case-img">
-                                        <img src="src/images/hebergements/4_small/HotelDeLaMer.jpg" alt="Auberge de la Mer" class="case-img-host">
-                                    </div>
-                                </div>
-                                <div class="case-text">
-                                    <h3 class="accommodation-name">Auberge de la Mer</h3>
-                                    <p class="accommodation-price">
-                                        Nuit à partir de
-                                        <span class="price">46€</span>
-                                    </p>
-                                    <div class="stars">
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star null"></i>
-                                        <i class="fas fa-star null"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                                
-                        <a href="#">
-                            <div class="marseille-room">
-                                <div class="rooms">
-                                    <div class="case-img">
-                                        <img src="src/images/hebergements/4_small/AubergeLePanier.jpg" alt="Auberge le Panier" class="case-img-host">
-                                    </div>
-                                </div>
-                                <div class="case-text">
-                                    <h3 class="accommodation-name">Auberge le Panier</h3>
-                                    <p class="accommodation-price">
-                                        Nuit à partir de
-                                        <span class="price">23€</span>
-                                    </p>
-                                    <div class="stars">
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star null"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="marseille-room">
-                                <div class="rooms">
-                                    <div class="case-img">
-                                        <img src="src/images/hebergements/4_small/HotelChezAmina.jpg" alt="Hôtel chez Amina" class="case-img-host">
-                                        <div class="case-text">
-                                            <h3 class="accommodation-name">Hôtel chez Amina</h3>
-                                            <p class="accommodation-price">
-                                                Nuit à partir de
-                                                <span class="price">96€</span>
-                                            </p>
-                                            <div class="stars">
-                                                <i class="fas fa-star valid"></i>
-                                                <i class="fas fa-star valid"></i>
-                                                <i class="fas fa-star valid"></i>
-                                                <i class="fas fa-star valid"></i>
-                                                <i class="fas fa-star valid"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>                
+        <div class="infos">
+          <i class="fas fa-info"></i>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+      </section>
+      <!--Hébergements-->
+      <section>
+        <div class="container-accommodation">
+          <div class="marseille-accommodation">
+            <div class="titre-accommodation">
+              <h2>Hébergements à Marseille</h2>
+            </div>
+            <div class="accommodations">
+              <a href="#">
+                <div class="marseille-room">
+                  <div class="rooms">
+                    <div class="case-img">
+                      <img
+                        src="src/images/hebergements/4_small/AubergeLaCanebiere.jpg"
+                        alt="Auberge la Canebière"
+                        class="case-img-host"
+                      />
                     </div>
-                    <p class="show-more"><a href="#">Afficher plus</a></p>
+                  </div>
+                  <div class="case-text">
+                    <h3 class="accommodation-name">Auberge la Canebière</h3>
+                    <p class="accommodation-price">
+                      Nuit à partir de
+                      <span class="price">25€</span>
+                    </p>
+                    <div class="stars">
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star null"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="bloc-most-popular"><!--flex-->
-                    <div class="most-popular"><!--grid-->
-                        <div class="h2-and-icon"><!--flex-->
-                            <h2>Les plus populaires</h2>
-                            <i class="fas fa-chart-line"></i>
-                            
+              </a>
+              <a href="#">
+                <div class="marseille-room">
+                  <div class="rooms">
+                    <div class="case-img">
+                      <img
+                        src="src/images/hebergements/4_small/HotelDuPort.jpg"
+                        alt="Hôtel du Port"
+                        class="case-img-host"
+                      />
+                    </div>
+                  </div>
+                  <div class="case-text">
+                    <h3 class="accommodation-name">Hotel du Port</h3>
+                    <p class="accommodation-price">
+                      Nuit à partir de
+                      <span class="price">52€</span>
+                    </p>
+                    <div class="stars">
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="marseille-room">
+                  <div class="rooms">
+                    <div class="case-img">
+                      <img
+                        src="src/images/hebergements/4_small/HotelLesMouettes.jpg"
+                        alt="Hôtel les Mouettes"
+                        class="case-img-host"
+                      />
+                    </div>
+                  </div>
+                  <div class="case-text">
+                    <h3 class="accommodation-name">Hôtel les Mouettes</h3>
+                    <p class="accommodation-price">
+                      Nuit à partir de
+                      <span class="price">76€</span>
+                    </p>
+                    <div class="stars">
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star null"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="marseille-room">
+                  <div class="rooms">
+                    <div class="case-img">
+                      <img
+                        src="src/images/hebergements/4_small/HotelDeLaMer.jpg"
+                        alt="Auberge de la Mer"
+                        class="case-img-host"
+                      />
+                    </div>
+                  </div>
+                  <div class="case-text">
+                    <h3 class="accommodation-name">Auberge de la Mer</h3>
+                    <p class="accommodation-price">
+                      Nuit à partir de
+                      <span class="price">46€</span>
+                    </p>
+                    <div class="stars">
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star null"></i>
+                      <i class="fas fa-star null"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="marseille-room">
+                  <div class="rooms">
+                    <div class="case-img">
+                      <img
+                        src="src/images/hebergements/4_small/AubergeLePanier.jpg"
+                        alt="Auberge le Panier"
+                        class="case-img-host"
+                      />
+                    </div>
+                  </div>
+                  <div class="case-text">
+                    <h3 class="accommodation-name">Auberge le Panier</h3>
+                    <p class="accommodation-price">
+                      Nuit à partir de
+                      <span class="price">23€</span>
+                    </p>
+                    <div class="stars">
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star null"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="marseille-room">
+                  <div class="rooms">
+                    <div class="case-img">
+                      <img
+                        src="src/images/hebergements/4_small/HotelChezAmina.jpg"
+                        alt="Hôtel chez Amina"
+                        class="case-img-host"
+                      />
+                      <div class="case-text">
+                        <h3 class="accommodation-name">Hôtel chez Amina</h3>
+                        <p class="accommodation-price">
+                          Nuit à partir de
+                          <span class="price">96€</span>
+                        </p>
+                        <div class="stars">
+                          <i class="fas fa-star valid"></i>
+                          <i class="fas fa-star valid"></i>
+                          <i class="fas fa-star valid"></i>
+                          <i class="fas fa-star valid"></i>
+                          <i class="fas fa-star valid"></i>
                         </div>
-                        <a href="#">
-                            <div class="room-popular" id="room1"><!--flex-->
-                                <div class="room-popular-case-img">
-                                    <img class="img-src" src="src/images/hebergements/4_small/HotelLeSoleilDuMatin.jpg" alt="HotelLeSoleilDuMatin">
-                                </div><!--flex-->
-                                <div class="case-text-popular"><!--flex-->
-                                    <div class="popular-name-price">
-                                        <h3 class="hotel-name">
-                                            Hotel le Soleil du Matin
-                                        </h3>
-                                        <p class="hotel-price">Nuits à partir de
-                                            <span class="price">128€</span>
-                                        </p>
-                                    </div>
-                                    <div class="stars">
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="room-popular" id="room2"><!--flex-->
-                                <div class="room-popular-case-img">
-                                    <img class="img-src" src="src/images/hebergements/4_small/AuCoeurDeL'eau.jpg" alt="Au coeur de l'eau">
-                                </div><!--flex-->
-                                <div class="case-text-popular"><!--flex-->
-                                    <div class="popular-name-price">
-                                        <h3 class="hotel-name">
-                                            Au coeur de l'eau Chambres d'hôtes
-                                        </h3>
-                                        <p class="hotel-price">Nuits à partir de
-                                            <span class="price">71€</span>
-                                        </p>
-                                    </div>
-                                    <div class="stars">
-                                    <i class="fas fa-star valid"></i>
-                                    <i class="fas fa-star valid"></i>
-                                    <i class="fas fa-star valid"></i>
-                                    <i class="fas fa-star valid"></i>
-                                    <i class="fas fa-star null"></i>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="room-popular" id="room3"><!--flex-->
-                                <div class="room-popular-case-img">
-                                    <img class="img-src" src="src/images/hebergements/4_small/HotelToutBleuEtBlanc.jpg" alt="Hotel tout bleu et blanc">
-                                </div><!--flex-->
-                                <div class="case-text-popular"><!--flex-->
-                                    <div class="popular-name-price">
-                                        <h3 class="hotel-name">
-                                            Hotel Tout bleu et blanc
-                                        </h3>
-                                        <p class="hotel-price">Nuits à partir de
-                                            <span class="price">68€</span>
-                                        </p>
-                                    </div>
-                                    <div class="stars">
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                        <i class="fas fa-star valid"></i>
-                                    <i class="fas fa-star null"></i>
-                                </div>
-                                    
-                                </div>
-                            </div>
-                        </a>
-                        
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </a>
             </div>
-            
-        </section>
-        
-            <h3 class="titre-activity" id="activity">Activités à Marseille</h3>
-        <section class="conteneur-marseille-activity">
-            <div class="item1">
-                <a href="#">
-                    <h3 class="titre">Vieux Port</h3>
-                </a>
+            <p class="show-more"><a href="#">Afficher plus</a></p>
+          </div>
+          <div class="bloc-most-popular">
+            <!--flex-->
+            <div class="most-popular">
+              <!--grid-->
+              <div class="h2-and-icon">
+                <!--flex-->
+                <h2>Les plus populaires</h2>
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <a href="#">
+                <div class="room-popular" id="room1">
+                  <!--flex-->
+                  <div class="room-popular-case-img">
+                    <img
+                      class="img-src"
+                      src="src/images/hebergements/4_small/HotelLeSoleilDuMatin.jpg"
+                      alt="HotelLeSoleilDuMatin"
+                    />
+                  </div>
+                  <!--flex-->
+                  <div class="case-text-popular">
+                    <!--flex-->
+                    <div class="popular-name-price">
+                      <h3 class="hotel-name">Hotel le Soleil du Matin</h3>
+                      <p class="hotel-price">
+                        Nuits à partir de
+                        <span class="price">128€</span>
+                      </p>
+                    </div>
+                    <div class="stars">
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="room-popular" id="room2">
+                  <!--flex-->
+                  <div class="room-popular-case-img">
+                    <img
+                      class="img-src"
+                      src="src/images/hebergements/4_small/AuCoeurDeL'eau.jpg"
+                      alt="Au coeur de l'eau"
+                    />
+                  </div>
+                  <!--flex-->
+                  <div class="case-text-popular">
+                    <!--flex-->
+                    <div class="popular-name-price">
+                      <h3 class="hotel-name">
+                        Au coeur de l'eau Chambres d'hôtes
+                      </h3>
+                      <p class="hotel-price">
+                        Nuits à partir de
+                        <span class="price">71€</span>
+                      </p>
+                    </div>
+                    <div class="stars">
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star null"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="room-popular" id="room3">
+                  <!--flex-->
+                  <div class="room-popular-case-img">
+                    <img
+                      class="img-src"
+                      src="src/images/hebergements/4_small/HotelToutBleuEtBlanc.jpg"
+                      alt="Hotel tout bleu et blanc"
+                    />
+                  </div>
+                  <!--flex-->
+                  <div class="case-text-popular">
+                    <!--flex-->
+                    <div class="popular-name-price">
+                      <h3 class="hotel-name">Hotel Tout bleu et blanc</h3>
+                      <p class="hotel-price">
+                        Nuits à partir de
+                        <span class="price">68€</span>
+                      </p>
+                    </div>
+                    <div class="stars">
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star valid"></i>
+                      <i class="fas fa-star null"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <h3 class="titre-activity" id="activity">Activités à Marseille</h3>
+      <section class="conteneur-marseille-activity">
+        <div class="item1">
+          <a href="#">
+            <h3 class="titre">Vieux Port</h3>
+          </a>
+        </div>
         <div class="item2">
-            <a href="#">
-                <h3 class="titre">Fort de Pomègues</h3>
-            </a>
+          <a href="#">
+            <h3 class="titre">Fort de Pomègues</h3>
+          </a>
         </div>
         <div class="item3">
-            <a href="#">
-                <h3 class="titre">îles du Frioul</h3>
-            </a>
+          <a href="#">
+            <h3 class="titre">îles du Frioul</h3>
+          </a>
         </div>
         <div class="item4">
-            <a href="#">
-                <h3 class="titre">Parc National des Calanques</h3>
-            </a>
+          <a href="#">
+            <h3 class="titre">Parc National des Calanques</h3>
+          </a>
         </div>
         <div class="item5">
-            <a href="#">
-                <h3 class="titre">Notre-Dame-de-la-Garde</h3>
-            </a>
+          <a href="#">
+            <h3 class="titre">Notre-Dame-de-la-Garde</h3>
+          </a>
         </div>
         <div class="item6">
-            <a href="#">
-                <h3 class="titre">Parc Longchamp</h3>
-            </a>
+          <a href="#">
+            <h3 class="titre">Parc Longchamp</h3>
+          </a>
         </div>
-        
-    </section>
-   </main>
-   <!--footer-->
-   <footer class="footer"><!--flex-->
-       <div class="footer-blocks"><!--flex-->
-           <!--A propos-->
-           <div class="blocs-footer">
-               <h3 class="footer-title">À propos</h3>
-               <a href="#" class="footer-link">fonctionnement du site</a>
-               <a href="#" class="footer-link">Conditions générales de vente</a>
-               <a href="#" class="footer-link">Données et confidentialités</a>
-           </div><!--flex-->
-           <!--Nos hébergements-->
-           <div class="blocs-footer"><!--flex-->
-               <h3 class="footer-title-accommodation">Nos hébergements</h3>
-               <a href="" class="footer-link">Charte qualité</a>
-               <a href="" class="footer-link">Soumettre votre hôtel</a>
-           </div>
-           <!--Assistance-->
-           <div class="blocs-footer"><!--flex-->
-            <h3 class="footer-title-assistance">assistance</h3>
-            <a href="" class="footer-link">Centre d'aide</a>
-            <a href="" class="footer-link">Nous contacter</a>
-           </div>
-       </div>
-   </footer>
-</body>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <!--flex-->
+      <div class="footer-blocks">
+        <!--flex-->
+        <!--A propos-->
+        <div class="blocs-footer">
+          <h3 class="footer-title">À propos</h3>
+          <a href="#" class="footer-link">fonctionnement du site</a>
+          <a href="#" class="footer-link">Conditions générales de vente</a>
+          <a href="#" class="footer-link">Données et confidentialités</a>
+        </div>
+        <!--flex-->
+        <!--Nos hébergements-->
+        <div class="blocs-footer">
+          <!--flex-->
+          <h3 class="footer-title-accommodation">Nos hébergements</h3>
+          <a href="" class="footer-link">Charte qualité</a>
+          <a href="" class="footer-link">Soumettre votre hôtel</a>
+        </div>
+        <!--Assistance-->
+        <div class="blocs-footer">
+          <!--flex-->
+          <h3 class="footer-title-assistance">assistance</h3>
+          <a href="" class="footer-link">Centre d'aide</a>
+          <a href="" class="footer-link">Nous contacter</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
