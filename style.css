@@ -17,6 +17,9 @@ main {
   max-width: 1440px;
   width: 98%;
 }
+.loupe{
+  display:none;
+}
 header {
   display: flex;
   justify-content: center;
