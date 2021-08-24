@@ -23,9 +23,7 @@ ul.filters{
     flex-wrap: wrap;
     align-items: center;  
   }
-  .filter-button.money{
-      margin:0 0 0 3px;
-  }
+  
 .marseille-accommodation{
     padding:0;
 }

@@ -19,10 +19,11 @@ h1.h1{
   width: auto;
 }
 .div-filters{
-  width: 100%;
+  width:calc( 100%-50px);
   margin: 0 10px;
   flex-direction: row;
   flex-wrap: wrap;
+
 
 }
 .filters {

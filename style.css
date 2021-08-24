@@ -29,7 +29,7 @@ header {
   margin: 3px auto auto auto;
 }
 img.logo {
-  margin: auto;
+ margin-top: 15px;
 }
 nav {
   display: flex;
@@ -95,7 +95,7 @@ transition:0.4s;
 /*sectionRecherche*/
 
 .h1 {
-  font-size: 32px;
+  font-size: 26px;
   margin: 10px 0 0;
 }
 .city-center {
@@ -123,6 +123,7 @@ transition:0.4s;
   height: 57px;
   border-radius: 0 14px 14px 0;
   border: 1px solid #f2f2f2;
+  font-weight: 600;
 }
 .icon-location > i {
   display: flex;
@@ -135,6 +136,10 @@ transition:0.4s;
   font-size: 17px;
   border-radius: 13px 0 0 13px;
   background-color: #f2f2f2;
+}
+button .recherche{
+  font-family: "Raleway","sans-serif"
+  ;
 }
 .icon-location > input::placeholder {
   font-weight: bold;
@@ -166,7 +171,7 @@ transition:0.4s;
 .filter-button {
   display: flex;
   border: 2px solid #e2e2e2;
-  margin: 0 0 0 25px;
+  margin: 10px 25px 0 0;
   align-items: center;
   justify-content: flex-start;
   border-radius: 100px;
@@ -243,8 +248,14 @@ transition:0.4s;
   display: block;
   display: block;
   font-size: 18px;
-  margin-left: 30px;
-  border-radius:25px
+  margin-left: 0;
+  border-radius:25px;
+  font-size: 20px;
+}
+.titre-accommodation h2 {
+  font-size: 22px;
+  margin-left: 18px;
+  width
 }
 .accommodations {
   /*chambres*/
@@ -339,6 +350,7 @@ transition:0.4s;
 }
 .h2-and-icon > h2 {
   margin: 0;
+  font-size: 22px;
 }
 
 .h2-and-icon > .fas {
@@ -389,11 +401,14 @@ p.hotel-price {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .stars > i.valid {
   color: #0065fc;
+  font-size:1px
 }
 .stars > i.null {
   color: #d9d9d9;
+  font-size:1px
 }
 .conteneur-marseille-activity {
   display: grid;
